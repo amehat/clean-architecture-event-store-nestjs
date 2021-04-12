@@ -1,0 +1,13 @@
+import { Logger } from '@nestjs/common';
+import { NestFactory } from '@nestjs/core';
+
+
+import AppModule from './infrastructure/app.module';
+
+export default async function bootstrap() {
+  const app = await NestFactory.create(AppModule);
+  app.enableCors();
+  await app.listen(3000, () => {
+    Logger.log('Clean Architecture with NestJS and Event Store start on 3000');
+  });
+}

@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "allowSyntheticDefaultImports": true,
+        "baseUrl": "./",
+        "outDir": "./dist",
+        "emitDecoratorMetadata": true,
+        "esModuleInterop": true,
+        "target": "es2019",
+        "module": "commonjs",
+        "experimentalDecorators": true,
+        "jsx": "preserve",
+        "strict": true,
+        "strictPropertyInitialization": false,
+        "resolveJsonModule": true,
+        "paths": {
+            "use-case/*": ["src/use-case"],
+            "infrastructure/*": ["src/infrastructure"]
+        }
+    },
+    "exclude": ["*/node_modules"]
+}
