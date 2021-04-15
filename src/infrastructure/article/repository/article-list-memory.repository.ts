@@ -30,7 +30,7 @@ export default class ArticleListMemory implements PageList {
         return this.articleList.getAll();
     }
 
-    async create(article: Article): Promise<Article | {}> {
+    async save(article: Article): Promise<Article | {}> {
         return this.articleList.create(article);
     }
 
@@ -46,4 +46,8 @@ export default class ArticleListMemory implements PageList {
             resolve();
         });
     }
+
+    async persist(): Promise<void> {}
+
+    async rollback(): Promise<void> {}
 }

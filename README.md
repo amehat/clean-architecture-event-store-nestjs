@@ -1,6 +1,6 @@
-# CLEAN ARCHITECTURE NESTJS
+# CLEAN ARCHITECTURE EVENT STORE NESTJS
 
-This repository is an example of an implementation of a Clean Architecture type architecture with the Typescript NestJS framework.
+This repository is an example of an implementation of a Clean Architecture type architecture with the Typescript NestJS framework and EventStore.
 The application is accessible as an API.
 
 ## ROUTES
