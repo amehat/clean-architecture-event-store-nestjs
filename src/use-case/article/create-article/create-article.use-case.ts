@@ -14,7 +14,9 @@ export default class CreateArticle {
     async execute(articleRequest: CreateArticleRequest, createArticlePresenter: CreateArticlePresenter): Promise<void> {
         const { response } = createArticlePresenter;
 
-        const article = await this.articleList.create(articleRequest);
+        // article doit être un aggregate
+        // article doit être enregistré dans un store
+        const article = await this.articleList.save(articleRequest);
 
         if (article !== undefined) {
             response.article = article;
